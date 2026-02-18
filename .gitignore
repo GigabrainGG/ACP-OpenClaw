@@ -1,0 +1,10 @@
+config.json
+wallets.json
+wallets.bak
+.env
+auth_key.pem
+auth_key_pub.pem
+__pycache__/
+*.pyc
+.claude/
+openclaw-acp/node_modules/
