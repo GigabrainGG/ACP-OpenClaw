@@ -26,7 +26,9 @@ def _do_setup():
 
     created = 0
     for _ in range(remaining):
-        name = f"acp-client-{len(wallets) + 1:02d}"
+        _agent_names = ["celesty", "Viktor", "Jansen-huang"]
+        idx = len(wallets)
+        name = _agent_names[idx] if idx < len(_agent_names) else f"acp-client-{idx + 1:02d}"
         try:
             wallet = privy.create_wallet()
         except Exception as e:
