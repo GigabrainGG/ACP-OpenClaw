@@ -12,11 +12,11 @@ class Config:
     api_base_url: str = "https://claw-api.virtuals.io"
     provider_wallet: str = "0xa51AC6fE439ba7c29AD978a92Ef29BBeF2c313dd"
     job_offering: str = "ask_gigabrain"
-    min_sleep: int = 30
-    max_sleep: int = 120
+    min_sleep: int = 300
+    max_sleep: int = 300
     poll_interval: int = 5
     job_timeout_sec: int = 300
-    num_agents: int = 10
+    num_agents: int = 3
     amount_usdc: float = 1.0
     acp_cli_path: str = field(default_factory=lambda: os.getenv("ACP_CLI_PATH", "./openclaw-acp"))
 
